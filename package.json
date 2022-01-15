@@ -1,0 +1,19 @@
+{
+  "name": "website-jordan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanjc6/website-jordan.git"
+  },
+  "author": "Jordan Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanjc6/website-jordan/issues"
+  },
+  "homepage": "https://github.com/jordanjc6/website-jordan#readme"
+}
