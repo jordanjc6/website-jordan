@@ -58,14 +58,14 @@ footer {
     justify-content: center;
 }
 
-#display-pic {
+#display-picture {
     float: left;
     height: 22em;
     width: 16em;
     margin: 3em;
 }
 
-#bio {
+#biography {
     display: inline-block;
     border: 1px solid black;
     height: 22em;

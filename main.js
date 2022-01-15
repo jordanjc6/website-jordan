@@ -26,14 +26,12 @@ const PageTemplate = {
         }
     },
     template: `
-        <div class="page-container">
-            <custom-header v-bind:tabs="tabs" @switch-tab="onSwitchTab">
-            </custom-header>
-            <main-template v-bind:currentTabComponent="currentTabComponent">
-            </main-template>
-            <custom-footer v-bind:links="links">
-            </custom-footer>
-        </div>`,
+        <custom-header id="test" v-bind:tabs="tabs" @switch-tab="onSwitchTab">
+        </custom-header>
+        <main-template v-bind:currentTabComponent="currentTabComponent">
+        </main-template>
+        <custom-footer v-bind:links="links">
+        </custom-footer>`,
     components: {
         CustomHeader,
         MainTemplate,

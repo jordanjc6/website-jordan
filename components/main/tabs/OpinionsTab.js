@@ -1,6 +1,6 @@
 export const OpinionsTab = {
     template: `
-    <div>
+    <div id="opinions-container">
         opinions
     </div>`
 };

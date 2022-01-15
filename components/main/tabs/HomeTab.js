@@ -22,7 +22,7 @@ export const HomeTab = {
     },
     template: `
     <div id="home-container">
-        <img id="display-pic" src="https://i.imgflip.com/58r9dj.jpg" />
-        <div id="bio">{{ biography }}</div>
+        <img id="display-picture" src="https://i.imgflip.com/58r9dj.jpg" />
+        <div id="biography">{{ biography }}</div>
     </div>`
 };

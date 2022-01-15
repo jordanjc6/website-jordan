@@ -1,6 +1,6 @@
 export const QuotesTab = {
     template: `
-    <div>
+    <div id="quotes-container">
         quotes
     </div>`
 };
