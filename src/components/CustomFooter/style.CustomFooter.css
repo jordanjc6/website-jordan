@@ -1,0 +1,15 @@
+footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5em;
+}
+
+.links {
+    border: 1px solid black;
+}
+
+.link {
+    padding: 0.25em;
+}

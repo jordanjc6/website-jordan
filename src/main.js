@@ -1,6 +1,7 @@
-import { CustomHeader } from "./components/CustomHeader.js";
+import { CustomHeader } from "./components/CustomHeader/CustomHeader.js";
 import { MainTemplate } from "./components/main/MainTemplate.js";
-import { CustomFooter } from "./components/CustomFooter.js";
+import { CustomFooter } from "./components/CustomFooter/CustomFooter.js";
+import { styles } from "./style.css";
 
 const PageTemplate = {
     data() {

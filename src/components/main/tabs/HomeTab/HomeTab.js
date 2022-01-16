@@ -1,3 +1,5 @@
+import { styles } from "./style.HomeTab.css";
+
 export const HomeTab = {
     data() {
         return {

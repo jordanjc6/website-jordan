@@ -1,0 +1,11 @@
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab:hover {
+    background-color: black;
+    color: white;
+}

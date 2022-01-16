@@ -1,3 +1,5 @@
+import { styles } from "./style.CustomFooter.css";
+
 export const CustomFooter = {
     props: {
         links: Array

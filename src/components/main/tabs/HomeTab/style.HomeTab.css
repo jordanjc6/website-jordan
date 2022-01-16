@@ -1,0 +1,19 @@
+#home-container {
+    display: flex;
+    justify-content: center;
+}
+
+#display-picture {
+    float: left;
+    height: 22em;
+    width: 16em;
+    margin: 3em;
+}
+
+#biography {
+    display: inline-block;
+    border: 1px solid black;
+    height: 22em;
+    width: 44em;
+    margin: 3em;
+}
