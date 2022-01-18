@@ -1,4 +1,4 @@
-import { HomeTab } from "./tabs/HomeTab.js"
+import { HomeTab } from "./tabs/HomeTab/HomeTab.js"
 import { ProjectsTab } from "./tabs/ProjectsTab.js";
 import { OpinionsTab } from "./tabs/OpinionsTab.js";
 import { QuotesTab } from "./tabs/QuotesTab.js";

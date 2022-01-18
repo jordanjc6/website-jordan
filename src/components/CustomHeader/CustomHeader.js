@@ -1,3 +1,5 @@
+import { styles } from './style.CustomHeader.css';
+
 export const CustomHeader = {
     props: {
         tabs: Array

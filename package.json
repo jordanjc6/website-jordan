@@ -2,9 +2,10 @@
   "name": "website-jordan",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
-    "serve": "live-server"
+    "start": "webpack && live-server",
+    "serve": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/jordanjc6/website-jordan/issues"
   },
-  "homepage": "https://github.com/jordanjc6/website-jordan#readme"
+  "homepage": "https://github.com/jordanjc6/website-jordan#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.5.0",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
 }
