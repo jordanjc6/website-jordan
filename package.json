@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jordanjc6/website-jordan#readme",
   "devDependencies": {
     "css-loader": "^6.5.1",
+    "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^2.5.0",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1",
