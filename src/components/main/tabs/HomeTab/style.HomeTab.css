@@ -19,3 +19,7 @@
     width: 44em;
     margin: 3em;
 }
+
+#projects-container {
+    position: relative;
+}
