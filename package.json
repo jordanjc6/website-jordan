@@ -4,7 +4,7 @@
   "description": "",
   "main": "./src/main.js",
   "scripts": {
-    "start": "webpack && live-server",
+    "s": "webpack && live-server",
     "serve": "webpack serve --open"
   },
   "repository": {
