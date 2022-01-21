@@ -1,6 +1,6 @@
 export const SportsTab = {
     template: `
-    <div id="sports-container">
+    <div>
         sports
     </div>`
 };

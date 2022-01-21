@@ -1,5 +1,6 @@
 import { ProjectSlide } from "./ProjectSlide.js";
 import { QuoteSlide } from "./QuoteSlide.js";
+import { SportSlide } from "./SportSlide.js";
 import { styles } from "./style.HomeTab.css";
 
 export const HomeTab = {
@@ -36,9 +37,14 @@ export const HomeTab = {
     <div id="quotes-container">
         <quote-slide>
         </quote-slide>
+    </div>
+    <div id="sports-container">
+        <sport-slide>
+        </sport-slide>
     </div>`,
     components: {
         ProjectSlide,
-        QuoteSlide
+        QuoteSlide,
+        SportSlide
     }
 };

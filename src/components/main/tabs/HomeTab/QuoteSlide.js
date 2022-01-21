@@ -52,7 +52,6 @@ export const QuoteSlide = {
 
             do {
                 randomIndex = Math.floor(Math.random() * (5 - 0 + 1) + 0);
-                console.log(randomIndex);
             } while(randomIndex == this.currentIndex);
 
             this.currentIndex = randomIndex;

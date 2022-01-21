@@ -1,6 +1,6 @@
 export const ProjectsTab = {
     template: `
-    <div id="projects-container">
+    <div>
         projects
     </div>`
 };

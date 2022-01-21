@@ -7,7 +7,7 @@ const PageTemplate = {
     data() {
         return {
             currentTab: 'Home',
-            tabs: ['Home', 'Projects', 'Opinions', 'Quotes', 'Sports'],
+            tabs: ['Home', 'Projects', 'Quotes', 'Sports'],
             links: [
                 { name: 'LinkedIn', address: 'https://www.linkedin.com/in/jordan-castro-128bab1b4/' },
                 { name: 'Github', address: 'https://github.com/jordanjc6' },
