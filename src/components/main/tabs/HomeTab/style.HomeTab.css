@@ -23,3 +23,12 @@
 #projects-container {
     position: relative;
 }
+
+#quotes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    width: 100%;
+    background-color: black;
+}
