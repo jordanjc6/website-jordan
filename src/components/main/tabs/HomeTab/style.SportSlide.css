@@ -1,0 +1,14 @@
+#collage-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#collage-container img {
+    flex-grow: 1;
+    height: 15em;
+    border: 1px solid black;
+}
+
+#collage-container img:last-child {
+    flex-grow: 10;
+}
