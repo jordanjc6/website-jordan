@@ -10,24 +10,28 @@ export const QuoteSlide = {
                     author: 'Speaker 1' 
                 },
                 { 
-                    text: `Quote 2 Quote Quote Quote Quote Quote
+                    text: `
+                        Quote 2 Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote`,
                     author: 'Speaker 2' 
                 },
                 { 
-                    text: `Quote 3 Quote Quote Quote Quote Quote
+                    text: `
+                        Quote 3 Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote`,
                     author: 'Speaker 3' 
                 },
                 { 
-                    text: `Quote 4 Quote Quote Quote Quote Quote
+                    text: `
+                        Quote 4 Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote`,
                     author: 'Speaker 4' 
                 },
                 { 
-                    text: `Quote 5 Quote Quote Quote Quote Quote
+                    text: `
+                        Quote 5 Quote Quote Quote Quote Quote
                         Quote Quote Quote Quote Quote Quote`,
                     author: 'Speaker 5' 
                 },
