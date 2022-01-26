@@ -1,4 +1,5 @@
 import { ProjectDisplay } from "./ProjectDisplay.js";
+import { styles } from "./style.ProjectsTab.css";
 
 export const ProjectsTab = {
     data() {
@@ -50,7 +51,7 @@ export const ProjectsTab = {
     <div id="projects-wrapper">
         <project-display 
             v-for="project in projects"
-            v-bind:description="project.description
+            v-bind:description="project.description"
             v-bind:pictures="project.pictures"
         ></project-display>
     </div>`,
