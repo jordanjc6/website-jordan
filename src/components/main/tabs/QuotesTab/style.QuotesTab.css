@@ -1,0 +1,42 @@
+#quotes-wrapper {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quote-block {
+    border: 1px solid blue;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.quote-block button {
+    width: 10em;
+    height: 5em;
+}
+
+.quote-block h3 {
+    margin: 0 2em;
+}
+
+.previous-quote {
+    
+}
+
+.next-quote {
+    
+}
+
+.quote-categories {
+    border: 1px solid green;
+}
+
+.quote-categories ul {
+
+}
+
+.quote-categories ul li {
+    cursor: pointer;
+}
