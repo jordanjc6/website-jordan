@@ -1,14 +1,15 @@
 .project-description {
     width: 30%;
     margin-left: 2.5%;
-    margin-top: 2.5%;
     position: sticky;
-    top: 2.5%;
+    top: 8em;
 }
 
 .project-pictures {
     width: 60%;
     margin-left: 37.5%;
+    position: relative;
+    bottom: 2em;
 }
 
 .project-pictures img {
