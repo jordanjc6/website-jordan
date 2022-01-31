@@ -27,7 +27,7 @@ const PageTemplate = {
         }
     },
     template: `
-        <custom-header id="test" v-bind:tabs="tabs" @switch-tab="onSwitchTab">
+        <custom-header v-bind:tabs="tabs" @switch-tab="onSwitchTab">
         </custom-header>
         <main-template v-bind:currentTabComponent="currentTabComponent">
         </main-template>
