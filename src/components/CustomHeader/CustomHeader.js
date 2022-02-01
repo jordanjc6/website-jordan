@@ -35,7 +35,7 @@ export const CustomHeader = {
     template: `
         <header v-bind:class="{ 'hide-header' : !showHeader }">
             <i class="icon"></i>
-            <ul class="list-items">
+            <ul class="list-items tabs">
                 <li class="item tab" v-for="tab in tabs" @click="$emit('switchTab', tab)">
                     {{ tab }}
                 </li>

@@ -5,12 +5,12 @@ body {
 
 main {
     position: relative;
-    top: 4em;
+    top: 70px;
 }
 
 .icon {  
-    width: 3em;
-    height: 3em;
+    width: 64px;
+    height: 64px;
     background-image: url("./assets/soccer-ball-icon.png");
     border-radius: 50%;
     margin-left: 2em;
@@ -20,7 +20,6 @@ main {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
     margin-right: 2em;
 } 
 

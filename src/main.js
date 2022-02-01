@@ -2,6 +2,7 @@ import { CustomHeader } from "./components/CustomHeader/CustomHeader.js";
 import { MainTemplate } from "./components/main/MainTemplate.js";
 import { CustomFooter } from "./components/CustomFooter/CustomFooter.js";
 import { styles } from "./style.css";
+import { Roboto } from "./assets/Roboto/Roboto-Regular.ttf";
 
 const PageTemplate = {
     data() {
