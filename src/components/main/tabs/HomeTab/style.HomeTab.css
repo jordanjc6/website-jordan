@@ -10,14 +10,25 @@
     height: 22em;
     width: 16em;
     margin: 3em;
+    border-radius: 1em;
+    border: 2px solid #000C66;
 }
 
 #biography {
     display: inline-block;
-    border: 1px solid black;
     height: 22em;
     width: 44em;
     margin: 3em;
+    white-space: pre;
+    color: #000C66;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 525;
+    font-size: 18px;
+}
+
+#greeting {
+    margin-bottom: 1em;
+    font-size: 48px;
 }
 
 #projects-container {

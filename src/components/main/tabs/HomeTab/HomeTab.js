@@ -6,29 +6,26 @@ import { styles } from "./style.HomeTab.css";
 export const HomeTab = {
     data() {
         return {
-            biography: `
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography
-                Biography Biography Biography Biography Biography Biography Biography Biography Biography`
+            greeting: `Hey, I'm Jordan Castro`,
+            biography: `I'm a 2nd year electrical engineering student at the University of Waterloo. For my
+Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual.
+I am currently employed as a Jr. Software Engineer at MCAP for my Winter 2022 coop.
+
+I have experience in full stack development using technologies such as ReactJS, Angular,
+Vue.js, NestJS, Node.js, ASP.Net, SQL Server, and PostgreSQL. I have also taken object
+-oriented programming courses in C++, C#, Java, and Python.
+            
+I am interested in software development and exploring the telecommunications industry. 
+You may view my personal projects under the projects tab.`
         };
     },
+    inject: ['displayPicture'],
     template: `
     <div id="home-container">
-        <img id="display-picture" src="https://i.imgflip.com/58r9dj.jpg" />
-        <div id="biography">{{ biography }}</div>
+        <img id="display-picture" v-bind:src="displayPicture" />
+        <div id="biography">
+            <div id="greeting">{{ greeting }}</div>{{ biography }}
+        </div>
     </div>
     <div id="projects-container">
         <project-slide>
