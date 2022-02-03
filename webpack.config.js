@@ -24,6 +24,15 @@ module.exports = {
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
           type: 'asset/resource'
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+          use: [{
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+            }
+          }]
         }
       ]
     },

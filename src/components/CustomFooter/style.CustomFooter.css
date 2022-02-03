@@ -1,5 +1,6 @@
 footer {
     border: 1px solid black;
+    background-color: #000C66;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -9,9 +10,9 @@ footer {
 }
 
 .links {
-    border: 1px solid black;
+
 }
 
 .link {
-    padding: 0.25em;
+    
 }

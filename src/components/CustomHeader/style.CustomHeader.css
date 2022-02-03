@@ -26,6 +26,7 @@ header {
     width: 5em;
     height: 30px;
     line-height: 30px;
+    padding: 1em;
 }
 
 .tab:hover {

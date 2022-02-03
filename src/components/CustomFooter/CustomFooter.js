@@ -1,18 +1,21 @@
+import { LinkedIcon } from "./LinkedIcon.js"; 
 import { styles } from "./style.CustomFooter.css";
 
 export const CustomFooter = {
     props: {
-        links: Array
+        icon: String,
+        links: Array,
     },
     template: `
         <footer>
-            <i class="icon"></i>
+            <i class="icon" v-bind:style="{ backgroundImage: 'url(' + icon + ')' }"></i>
             <ul class="list-items links">
-                <li class="item link" v-for="link in links" >
-                    <a v-bind:href="link.address" target='_blank'>
-                        {{ link.name }}
-                    </a>
+                <li class="item link" v-for="link in links">
+                    <linked-icon v-bind:link="link"></linked-icon>
                 </li>
             </ul>
-        </footer>`
+        </footer>`,
+    components: {
+        LinkedIcon
+    }
 };

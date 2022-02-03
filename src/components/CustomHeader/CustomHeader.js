@@ -8,6 +8,7 @@ export const CustomHeader = {
         };
     },
     props: {
+        icon: String,
         tabs: Array
     },
     methods: {
@@ -34,7 +35,7 @@ export const CustomHeader = {
     },
     template: `
         <header v-bind:class="{ 'hide-header' : !showHeader }">
-            <i class="icon"></i>
+            <i class="icon" v-bind:style="{ backgroundImage: 'url(' + icon + ')' }"></i>
             <ul class="list-items tabs">
                 <li class="item tab" v-for="tab in tabs" @click="$emit('switchTab', tab)">
                     {{ tab }}
