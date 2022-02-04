@@ -1,11 +1,13 @@
 import { ProjectSlide } from "./ProjectSlide.js";
 import { QuoteSlide } from "./QuoteSlide.js";
 import { SportSlide } from "./SportSlide.js";
+import displayPicture from "../../../../assets/display-picture.jpg";
 import { styles } from "./style.HomeTab.css";
 
 export const HomeTab = {
     data() {
         return {
+            displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
             biography: `I'm a 2nd year electrical engineering student at the University of Waterloo. For my
 Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual.
@@ -19,7 +21,6 @@ I am interested in software development and exploring the telecommunications ind
 You may view my personal projects under the projects tab.`
         };
     },
-    inject: ['displayPicture'],
     template: `
     <div id="home-container">
         <img id="display-picture" v-bind:src="displayPicture" />

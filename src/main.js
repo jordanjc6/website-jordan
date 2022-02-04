@@ -8,7 +8,6 @@ import linkedinIcon from "./assets/linkedin-icon.png";
 import githubIcon from "./assets/github-icon.png";
 import facebookIcon from "./assets/facebook-icon.png";
 import mailIcon from "./assets/mail-icon.png";
-import displayPicture from "./assets/display-picture.jpg";
 
 const PageTemplate = {
     data() {
@@ -49,9 +48,6 @@ const PageTemplate = {
         onSwitchTab(tab) {
             this.currentTab = tab;
         }
-    },
-    provide: {
-        displayPicture: displayPicture
     },
     template: `
         <custom-header v-bind:icon="soccerballIcon" v-bind:tabs="tabs" @switch-tab="onSwitchTab">

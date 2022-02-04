@@ -1,3 +1,6 @@
+import mcjewelrySlide from "../../../../assets/mcjewelry/search-parameters.png";
+import weekplannerSlide from "../../../../assets/weekplanner/form.png";
+import connectfourSlide from "../../../../assets/connectfour.png";
 import { styles } from "./style.ProjectSlide.css";
 
 export const ProjectSlide = {
@@ -7,7 +10,7 @@ export const ProjectSlide = {
             currentIndex: 0,
             projects: [
                 { 
-                    image: 'https://i.imgflip.com/58r9dj.jpg',
+                    image: mcjewelrySlide,
                     caption: `
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
@@ -16,7 +19,7 @@ export const ProjectSlide = {
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
                 },
                 { 
-                    image: 'https://www.fredrogerscenter.org/wp-content/uploads/2015/11/dark-grey-background-FRC-Grey.png',
+                    image: weekplannerSlide,
                     caption: `
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
@@ -24,15 +27,9 @@ export const ProjectSlide = {
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
                 },
                 { 
-                    image: 'https://wallpapercave.com/wp/wp3269246.jpg',
+                    image: connectfourSlide,
                     caption: `
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
-                },
-                { 
-                    image: 'https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg',
-                    caption: `
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
                         Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
                 }
