@@ -14,26 +14,17 @@ export const ProjectSlide = {
                 { 
                     image: mcjewelrySlide,
                     caption: `
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
+                        MCJewelry Pricing Tool`
                 },
                 { 
                     image: weekplannerSlide,
                     caption: `
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
+                        Week Planner`
                 },
                 { 
                     image: connectfourSlide,
                     caption: `
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption
-                        Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption Caption`
+                        Java Connect Four`
                 }
             ]
         };
@@ -51,7 +42,7 @@ export const ProjectSlide = {
             this.captionVisible = !this.captionVisible;
         },
         startSlide() {
-            this.timer = setInterval(this.nextSlide, 6000);
+            this.timer = setInterval(this.nextSlide, 3000);
         },
         nextSlide() {
             this.currentIndex += 1;
@@ -68,6 +59,6 @@ export const ProjectSlide = {
         @click="toggleCaption" 
     />
     <div id="project-caption" v-if="captionVisible">
-        {{ currentCaption }}
+        View {{ currentCaption }} in Projects tab.
     </div>`
 };
