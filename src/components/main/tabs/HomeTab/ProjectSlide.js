@@ -9,6 +9,7 @@ export const ProjectSlide = {
         return {
             imageBorder: curlicueBlueBackground,
             captionVisible: false,
+            animateSlide: false,
             currentIndex: 0,
             projects: [
                 { 
@@ -42,10 +43,17 @@ export const ProjectSlide = {
             this.captionVisible = !this.captionVisible;
         },
         startSlide() {
-            this.timer = setInterval(this.nextSlide, 3000);
+            setInterval(this.nextSlide, 3000);
+            setTimeout(() => {
+                setInterval(this.toggleAnimate, 3000);
+            }, 500);
         },
         nextSlide() {
+            this.animateSlide = true;
             this.currentIndex += 1;
+        },
+        toggleAnimate() {
+            this.animateSlide = false;
         }
     },
     mounted() {
@@ -53,6 +61,7 @@ export const ProjectSlide = {
     },
     template: `
     <img 
+        v-bind:class="{ animateSlide: animateSlide }"
         id="project-image" 
         v-bind:src="currentImage" 
         v-bind:style="{ backgroundImage: 'url(' + imageBorder + ')' }" 
