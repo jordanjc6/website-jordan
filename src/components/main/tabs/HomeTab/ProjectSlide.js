@@ -15,18 +15,15 @@ export const ProjectSlide = {
             projects: [
                 { 
                     image: mcjewelrySlide,
-                    caption: `
-                        MCJewelry Pricing Tool`
+                    caption: 'MCJewelry Pricing Tool'
                 },
                 { 
                     image: weekplannerSlide,
-                    caption: `
-                        Week Planner`
+                    caption: 'Week Planner'
                 },
                 { 
                     image: connectfourSlide,
-                    caption: `
-                        Java Connect Four`
+                    caption: 'Java Connect Four'
                 }
             ]
         };
@@ -44,15 +41,15 @@ export const ProjectSlide = {
             this.captionVisible = !this.captionVisible;           
         },
         startSlide() {
-            this.inInterval = setInterval(this.animateSlideIn, 5000);
+            setInterval(this.animateSlideIn, 5000);
             setTimeout(() => {
-                this.toggleInInterval = setInterval(this.toggleSlideIn, 5000);
+                setInterval(this.toggleSlideIn, 5000);
             }, 750);
             setTimeout(() => {
-                this.outInterval = setInterval(this.animateSlideOut, 5000);
+                setInterval(this.animateSlideOut, 5000);
             }, 4250);
             setTimeout(() => {
-                this.toggleOutInterval = setInterval(this.toggleSlideOut, 5000);
+                setInterval(this.toggleSlideOut, 5000);
             }, 4999);
         },
         animateSlideIn() {
@@ -80,6 +77,7 @@ export const ProjectSlide = {
         }, 4999);
         this.startSlide();
     },
+    emits: ['switchTab'],
     template: `
     <img 
         id="project-image" 
@@ -92,6 +90,7 @@ export const ProjectSlide = {
         id="project-caption" 
         v-if="captionVisible"
         v-bind:style="{ backgroundImage: 'url(' + imageBorder + ')' }"
+        @click="$emit('switchTab', 'projects', currentCaption)"
     >
         Click to View {{ currentCaption }} in Projects tab!
     </div>`

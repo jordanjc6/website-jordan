@@ -33,6 +33,7 @@ export const CustomHeader = {
     beforeDestroy() {
         window.removeEventListener('scroll', this.onScroll);
     },
+    emits: ['switchTab'],
     template: `
         <header v-bind:class="{ 'hide-header' : !showHeader }">
             <i class="icon" v-bind:style="{ backgroundImage: 'url(' + icon + ')' }"></i>

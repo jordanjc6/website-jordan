@@ -29,7 +29,7 @@ You may view my personal projects under the projects tab.`
         </div>
     </div>
     <div id="projects-container">
-        <project-slide>
+        <project-slide v-bind="$attrs">
         </project-slide>
     </div>
     <div id="quotes-container">

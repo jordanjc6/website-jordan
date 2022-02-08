@@ -9,7 +9,7 @@ export const MainTemplate = {
     },
     template: `
     <main>
-        <component :is="currentTabComponent"></component>
+        <component :is="currentTabComponent" v-bind="$attrs"></component>
     </main>`,
     components: {
         HomeTab,

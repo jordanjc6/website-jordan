@@ -15,6 +15,7 @@ const PageTemplate = {
             currentTab: 'Home',
             tabs: ['Home', 'Projects', 'Quotes', 'Sports'],
             soccerballIcon: soccerballIcon,
+            projectsTabLocation: null,
             links: [
                 { 
                     name: 'LinkedIn',
@@ -45,15 +46,23 @@ const PageTemplate = {
         }
     },
     methods: {
-        onSwitchTab(tab) {
+        onSwitchTab(tab, currentCaption) {
             this.currentTab = tab;
+            this.projectsTabLocation = currentCaption;
         }
+    },
+    provide() {
+        return {
+            projectsTabLocation: Vue.computed(() => this.projectsTabLocation.replace(/\s+/g, '').toLowerCase())
+        };
     },
     template: `
         <custom-header v-bind:icon="soccerballIcon" v-bind:tabs="tabs" @switch-tab="onSwitchTab">
         </custom-header>
-        <main-template v-bind:currentTabComponent="currentTabComponent">
-        </main-template>
+        <main-template 
+            v-bind:currentTabComponent="currentTabComponent"
+            @switch-tab="onSwitchTab"
+        ></main-template>
         <custom-footer v-bind:icon="soccerballIcon" v-bind:links="links">
         </custom-footer>`,
     components: {

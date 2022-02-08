@@ -6,8 +6,9 @@ export const ProjectsTab = {
         return {
             projects: [
                 { 
+                    name: 'MCJewelry Pricing Tool',
                     description: `
-                        This is project 1. This is project 1. This is project 1.
+                        This is MCJewelry Pricing Tool. This is project 1. This is project 1.
                         This is project 1. This is project 1. This is project 1.
                         This is project 1. This is project 1. This is project 1.
                         This is project 1. This is project 1. This is project 1.
@@ -18,8 +19,9 @@ export const ProjectsTab = {
                     ]
                 },
                 { 
+                    name: 'Week Planner',
                     description: `
-                        This is project 2. This is project 2. This is project 2.
+                        This is Week Planner. This is project 2. This is project 2.
                         This is project 2. This is project 2. This is project 2.
                         This is project 2. This is project 2. This is project 2.
                         This is project 2. This is project 2. This is project 2.
@@ -31,8 +33,9 @@ export const ProjectsTab = {
                     ]
                 },
                 { 
+                    name: 'Java Connect Four',
                     description: `
-                        This is project 3. This is project 3. This is project 3.
+                        This is Java Connect Four. This is project 3. This is project 3.
                         This is project 3. This is project 3. This is project 3.
                         This is project 3. This is project 3. This is project 3.
                         This is project 3. This is project 3. This is project 3.
@@ -47,10 +50,17 @@ export const ProjectsTab = {
             ]
         };
     },
+    mounted() {
+        console.log(this.$refs);
+        console.log(this.$refs.weekplanner);
+        this.$refs.weekplanner.scrollIntoView();
+    },
+    inject: ['projectsTabLocation'],
     template: `
     <div id="projects-wrapper">
         <project-display 
             v-for="project in projects"
+            ref="weekplanner"
             v-bind:description="project.description"
             v-bind:pictures="project.pictures"
         ></project-display>
