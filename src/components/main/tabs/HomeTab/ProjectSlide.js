@@ -9,7 +9,8 @@ export const ProjectSlide = {
         return {
             imageBorder: curlicueBlueBackground,
             captionVisible: false,
-            animateSlide: false,
+            slideIn: false,
+            slideOut: false,
             currentIndex: 0,
             projects: [
                 { 
@@ -40,34 +41,58 @@ export const ProjectSlide = {
     },
     methods: {
         toggleCaption() {
-            this.captionVisible = !this.captionVisible;
+            this.captionVisible = !this.captionVisible;           
         },
         startSlide() {
-            setInterval(this.nextSlide, 3000);
+            this.inInterval = setInterval(this.animateSlideIn, 5000);
             setTimeout(() => {
-                setInterval(this.toggleAnimate, 3000);
-            }, 500);
+                this.toggleInInterval = setInterval(this.toggleSlideIn, 5000);
+            }, 750);
+            setTimeout(() => {
+                this.outInterval = setInterval(this.animateSlideOut, 5000);
+            }, 4250);
+            setTimeout(() => {
+                this.toggleOutInterval = setInterval(this.toggleSlideOut, 5000);
+            }, 4999);
         },
-        nextSlide() {
-            this.animateSlide = true;
+        animateSlideIn() {
+            this.slideIn = true;
             this.currentIndex += 1;
         },
-        toggleAnimate() {
-            this.animateSlide = false;
+        toggleSlideIn() {
+            this.slideIn = false;
+        },
+        animateSlideOut() {
+            this.captionVisible = false;
+            this.slideOut = true;
+        },
+        toggleSlideOut() {
+            this.slideOut = false;
         }
     },
     mounted() {
+        setTimeout(() => {
+            this.captionVisible = false;
+            this.slideOut = true;
+        }, 4250);
+        setTimeout(() => {
+            this.slideOut = false;
+        }, 4999);
         this.startSlide();
     },
     template: `
     <img 
-        v-bind:class="{ animateSlide: animateSlide }"
         id="project-image" 
+        v-bind:class="{ slideIn: slideIn, slideOut: slideOut }"
         v-bind:src="currentImage" 
         v-bind:style="{ backgroundImage: 'url(' + imageBorder + ')' }" 
         @click="toggleCaption" 
     />
-    <div id="project-caption" v-if="captionVisible">
-        View {{ currentCaption }} in Projects tab.
+    <div 
+        id="project-caption" 
+        v-if="captionVisible"
+        v-bind:style="{ backgroundImage: 'url(' + imageBorder + ')' }"
+    >
+        Click to View {{ currentCaption }} in Projects tab!
     </div>`
 };

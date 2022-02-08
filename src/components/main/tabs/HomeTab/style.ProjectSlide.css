@@ -9,12 +9,12 @@
     position: relative;
 }
 
-.animateSlide {
-    animation-name: slideRight;
-    animation-duration: 0.5s;
+.slideIn {
+    animation-name: slideIn;
+    animation-duration: 0.75s;
 }
 
-@keyframes slideRight {
+@keyframes slideIn {
      from {
          left: -100%;
      }
@@ -23,10 +23,34 @@
      }
 }
 
+.slideOut {
+    animation-name: slideOut;
+    animation-duration: 0.75s;
+}
+
+@keyframes slideOut {
+     from {
+         left: 0;
+     }
+     to {
+        left: 100%;
+     }
+}
+
 #project-caption {
-    color: black;
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-family: 'Roboto', sans-serif;
+}
+
+#project-caption:hover {
+    color: #87cefa;
+    border: 1px solid #87cefa;
 }

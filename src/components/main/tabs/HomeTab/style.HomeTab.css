@@ -33,6 +33,7 @@
 
 #projects-container {
     position: relative;
+    overflow-x: hidden;
 }
 
 #quotes-container {
