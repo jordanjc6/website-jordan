@@ -15,7 +15,7 @@ const PageTemplate = {
             currentTab: 'Home',
             tabs: ['Home', 'Projects', 'Quotes', 'Sports'],
             soccerballIcon: soccerballIcon,
-            projectsTabLocation: null,
+            projectsTabLocation: 'top',
             links: [
                 { 
                     name: 'LinkedIn',
@@ -48,7 +48,11 @@ const PageTemplate = {
     methods: {
         onSwitchTab(tab, currentCaption) {
             this.currentTab = tab;
-            this.projectsTabLocation = currentCaption;
+            if(currentCaption) {
+                this.projectsTabLocation = currentCaption;
+            } else {
+                this.projectsTabLocation = 'top'
+            }
         }
     },
     provide() {

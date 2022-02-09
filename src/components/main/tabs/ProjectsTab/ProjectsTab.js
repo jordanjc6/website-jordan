@@ -7,6 +7,7 @@ export const ProjectsTab = {
             projects: [
                 { 
                     name: 'MCJewelry Pricing Tool',
+                    ref: 'mcjewelrypricingtool',
                     description: `
                         This is MCJewelry Pricing Tool. This is project 1. This is project 1.
                         This is project 1. This is project 1. This is project 1.
@@ -20,6 +21,7 @@ export const ProjectsTab = {
                 },
                 { 
                     name: 'Week Planner',
+                    ref: 'weekplanner',
                     description: `
                         This is Week Planner. This is project 2. This is project 2.
                         This is project 2. This is project 2. This is project 2.
@@ -34,6 +36,7 @@ export const ProjectsTab = {
                 },
                 { 
                     name: 'Java Connect Four',
+                    ref: 'javaconnectfour',
                     description: `
                         This is Java Connect Four. This is project 3. This is project 3.
                         This is project 3. This is project 3. This is project 3.
@@ -51,18 +54,28 @@ export const ProjectsTab = {
         };
     },
     mounted() {
-        console.log(this.$refs);
-        console.log(this.$refs.weekplanner);
-        this.$refs.weekplanner.scrollIntoView();
+        console.log(this.projectsTabLocation.value);
+        if(this.projectsTabLocation.value !== 'top') {
+            this.$refs[this.projectsTabLocation.value].$el.scrollIntoView({ behavior: 'smooth' });
+        }
     },
     inject: ['projectsTabLocation'],
     template: `
     <div id="projects-wrapper">
-        <project-display 
-            v-for="project in projects"
-            ref="weekplanner"
-            v-bind:description="project.description"
-            v-bind:pictures="project.pictures"
+        <project-display
+            v-bind:description="projects[0].description"
+            v-bind:pictures="projects[0].pictures"
+            v-bind:ref="projects[0].ref"
+        ></project-display>
+        <project-display
+            v-bind:description="projects[1].description"
+            v-bind:pictures="projects[1].pictures"
+            v-bind:ref="projects[1].ref"
+        ></project-display>
+        <project-display
+            v-bind:description="projects[2].description"
+            v-bind:pictures="projects[2].pictures"
+            v-bind:ref="projects[2].ref"
         ></project-display>
     </div>`,
     components: {
