@@ -1,8 +1,10 @@
+import quotationMark from '../../../../assets/left-quote.png';
 import { styles } from "./style.QuoteSlide.css";
 
 export const QuoteSlide = {
     data() {
         return {
+            quotationMark: quotationMark,
             currentIndex: 0,
             quotes: [
                 { 
@@ -65,7 +67,8 @@ export const QuoteSlide = {
         this.randomQuote();
     },
     template: `
-    <div>
+    <div id="quote-block">
+        <div id="quotation-mark" v-bind:style="{ backgroundImage: 'url(' + quotationMark + ')' }"></div>
         <div id="quote-text">
             {{ currentText }}
         </div>
@@ -73,7 +76,7 @@ export const QuoteSlide = {
             {{ currentAuthor }}
         </div>
         <button @click="randomQuote">
-            Click
+            New Quote
         </button>
     </div>`
 };

@@ -33,3 +33,8 @@ header {
     background-color: white;
     color: #000C66;
 }
+
+.tab:active {
+    background-color: #000C66;
+    color: white;
+}

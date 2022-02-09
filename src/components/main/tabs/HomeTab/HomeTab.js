@@ -3,10 +3,12 @@ import { QuoteSlide } from "./QuoteSlide.js";
 import { SportSlide } from "./SportSlide.js";
 import displayPicture from "../../../../assets/display-picture.jpg";
 import { styles } from "./style.HomeTab.css";
+import curlicueLightBlueBackground from "../../../../assets/curlicue-blues/eos_curlicue2h.png";
 
 export const HomeTab = {
     data() {
         return {
+            quoteSlideBackground: curlicueLightBlueBackground,
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
             biography: `I'm a 2nd year electrical engineering student at the University of Waterloo. For my
@@ -32,7 +34,7 @@ You may view my personal projects under the projects tab.`
         <project-slide v-bind="$attrs">
         </project-slide>
     </div>
-    <div id="quotes-container">
+    <div id="quotes-container" v-bind:style="{ backgroundImage: 'url(' + quoteSlideBackground + ')' }">
         <quote-slide>
         </quote-slide>
     </div>

@@ -1,7 +1,46 @@
+#quote-block {
+    font-family: 'Roboto', sans-serif;
+}
+
+#quotation-mark {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    right: 40px;
+    top: 32px;
+}
+
 #quote-text {
-    color: white;
+    max-width: 36em;
+    font-size: larger;
 }
 
 #quote-author {
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+#quote-block button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 1.5em;
+    font-size: medium;
+    padding: 0.5em 1em;
+    background-color: #000C66;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    transition: 0.1s all ease-out;
+    cursor: pointer;
+}
+
+#quote-block button:hover {
+    background-color: white;
+    color: #000C66;
+}
+
+#quote-block button:active {
+    background-color: #000C66;
     color: white;
 }

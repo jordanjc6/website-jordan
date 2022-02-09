@@ -29,18 +29,20 @@
 #greeting {
     margin-bottom: 1em;
     font-size: 48px;
+    color: #87cefa;
 }
 
 #projects-container {
     position: relative;
     overflow-x: hidden;
+    display: flex;
 }
 
 #quotes-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15em;
+    height: 25em;
     width: 100%;
-    background-color: black;
+    background-color: #87cefa;
 }
