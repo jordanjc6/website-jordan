@@ -56,26 +56,17 @@ export const ProjectsTab = {
     mounted() {
         console.log(this.projectsTabLocation.value);
         if(this.projectsTabLocation.value !== 'top') {
-            this.$refs[this.projectsTabLocation.value].$el.scrollIntoView({ behavior: 'smooth' });
+            this.$refs[this.projectsTabLocation.value][0].$el.scrollIntoView({ behavior: 'smooth' });
         }
     },
     inject: ['projectsTabLocation'],
     template: `
     <div id="projects-wrapper">
         <project-display
-            v-bind:description="projects[0].description"
-            v-bind:pictures="projects[0].pictures"
-            v-bind:ref="projects[0].ref"
-        ></project-display>
-        <project-display
-            v-bind:description="projects[1].description"
-            v-bind:pictures="projects[1].pictures"
-            v-bind:ref="projects[1].ref"
-        ></project-display>
-        <project-display
-            v-bind:description="projects[2].description"
-            v-bind:pictures="projects[2].pictures"
-            v-bind:ref="projects[2].ref"
+            v-for="project in projects"
+            v-bind:description="project.description"
+            v-bind:pictures="project.pictures"
+            v-bind:ref="project.ref"
         ></project-display>
     </div>`,
     components: {
