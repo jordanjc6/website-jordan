@@ -1,4 +1,14 @@
 import { ProjectDisplay } from "./ProjectDisplay.js";
+import leaQuotesAppForm from '../../../../assets/leaquotesapp/form.png';
+import leaQuotesAppHome from '../../../../assets/leaquotesapp/home.png';
+import leaQuotesAppSidenav from '../../../../assets/leaquotesapp/sidenav.png';
+import mcjewelryAdminPage from '../../../../assets/mcjewelry/admin-page.png';
+import mcjewelryItemSelection from '../../../../assets/mcjewelry/item-selection.png';
+import mcjewelrySearch from '../../../../assets/mcjewelry/search-parameters.png';
+import weekPlannerDay from '../../../../assets/weekplanner/day.png';
+import weekPlannerForm from '../../../../assets/weekplanner/form.png';
+import weekPlannerHome from '../../../../assets/weekplanner/home.png';
+import connectFour from '../../../../assets/connectfour.png';
 import { styles } from "./style.ProjectsTab.css";
 
 export const ProjectsTab = {
@@ -6,48 +16,70 @@ export const ProjectsTab = {
         return {
             projects: [
                 { 
-                    name: 'MCJewelry Pricing Tool',
+                    title: 'Lea Quotes App',
+                    ref: 'leaquotesapp',
+                    description: `
+                        This is a full-stack web application developed for my 
+                        sister to create and manage her list of funny quotes 
+                        and conversations from around the house. The front-end 
+                        was built using Angular and NestJS was used to create 
+                        the backend. The REST API manages crud operations of 
+                        conversation entries. Conversations are stored in two 
+                        PostgreSQL tables: 'quotes' and 'phrases'. The title, 
+                        context, and speakers are 'quotes' attributes and each 
+                        quote record is related to the appropriate 'phrase' record 
+                        by quoteid. Each phrase record records the speaker and text.`,
+                    pictures: [
+                        leaQuotesAppHome,
+                        leaQuotesAppForm,
+                        leaQuotesAppSidenav
+                    ]
+                },
+                { 
+                    title: 'MCJewelry Pricing Tool',
                     ref: 'mcjewelrypricingtool',
                     description: `
-                        This is MCJewelry Pricing Tool. This is project 1. This is project 1.
-                        This is project 1. This is project 1. This is project 1.
-                        This is project 1. This is project 1. This is project 1.
-                        This is project 1. This is project 1. This is project 1.
-                        This is project 1. This is project 1. This is project 1.`,
+                        This is a full-stack web application developed for a 
+                        small jewelry business that is used to manage inventory 
+                        and price items. The front-end was made using HTML/CSS + 
+                        JavaScript and the back-end was built using NestJS. The 
+                        REST API makes requests to the back-end which communicates 
+                        with the PostgreSQL DB via TypeORM to perform search and 
+                        CRUD operations on the jewelry inventory.`,
                     pictures: [
-                        'https://i.imgflip.com/58r9dj.jpg',
-                        'https://www.fredrogerscenter.org/wp-content/uploads/2015/11/dark-grey-background-FRC-Grey.png'
+                        mcjewelrySearch,
+                        mcjewelryItemSelection,   
+                        mcjewelryAdminPage                   
                     ]
                 },
                 { 
-                    name: 'Week Planner',
+                    title: 'Week Planner',
                     ref: 'weekplanner',
                     description: `
-                        This is Week Planner. This is project 2. This is project 2.
-                        This is project 2. This is project 2. This is project 2.
-                        This is project 2. This is project 2. This is project 2.
-                        This is project 2. This is project 2. This is project 2.
-                        This is project 2. This is project 2. This is project 2.`,
+                        Week Planner is a web application made with JS, HTML, and CSS 
+                        that helps students manage their time. The app enables users to 
+                        name and schedule various event types, categorized by color, for all 
+                        the days of the week. The planner provides storage for each event 
+                        accurate to the minute in order for students to remain productive.`,
                     pictures: [
-                        'https://wallpapercave.com/wp/wp3269246.jpg',
-                        'https://i.imgflip.com/58r9dj.jpg',
-                        'https://www.fredrogerscenter.org/wp-content/uploads/2015/11/dark-grey-background-FRC-Grey.png'
+                        weekPlannerHome,
+                        weekPlannerDay,
+                        weekPlannerForm,
                     ]
                 },
                 { 
-                    name: 'Java Connect Four',
+                    title: 'Java Connect Four',
                     ref: 'javaconnectfour',
                     description: `
-                        This is Java Connect Four. This is project 3. This is project 3.
-                        This is project 3. This is project 3. This is project 3.
-                        This is project 3. This is project 3. This is project 3.
-                        This is project 3. This is project 3. This is project 3.
-                        This is project 3. This is project 3. This is project 3.`,
+                        Connect 4 is a terminal-based recreation 
+                        of the game Connect Four coded in Java. 
+                        Players take turns placing their tokens 
+                        on the board by inputting the desired 
+                        column number. The board GUI was created 
+                        using Java Swing and this game supports 
+                        multiplayer.`,
                     pictures: [
-                        'https://wallpapercave.com/wp/wp3269246.jpg',
-                        'https://i.imgflip.com/58r9dj.jpg',
-                        'https://www.fredrogerscenter.org/wp-content/uploads/2015/11/dark-grey-background-FRC-Grey.png',
-                        'https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg'
+                        connectFour
                     ]
                 }
             ]
@@ -64,6 +96,7 @@ export const ProjectsTab = {
     <div id="projects-wrapper">
         <project-display
             v-for="project in projects"
+            v-bind:title="project.title"
             v-bind:description="project.description"
             v-bind:pictures="project.pictures"
             v-bind:ref="project.ref"

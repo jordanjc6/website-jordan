@@ -2,18 +2,34 @@
     width: 30%;
     margin-left: 2.5%;
     position: sticky;
-    top: 8em;
+    top: 5em;
+    color: #000C66;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 525;
+    font-size: 18px;
+}
+
+.project-title {
+    margin-bottom: 1em;
+    font-size: 48px;
+    color: #87cefa;
 }
 
 .project-pictures {
     width: 60%;
     margin-left: 37.5%;
     position: relative;
-    bottom: 2em;
+    bottom: 12em;
 }
 
 .project-pictures img {
-    max-width: 100%;
     display: block;
     margin-bottom: 3em;
+    background-color: #7d7d7d;
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    padding: 5px 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
 }
