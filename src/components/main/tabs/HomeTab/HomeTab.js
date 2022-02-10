@@ -2,8 +2,8 @@ import { ProjectSlide } from "./ProjectSlide.js";
 import { QuoteSlide } from "./QuoteSlide.js";
 import { SportSlide } from "./SportSlide.js";
 import displayPicture from "../../../../assets/display-picture.jpg";
-import { styles } from "./style.HomeTab.css";
 import curlicueLightBlueBackground from "../../../../assets/curlicue-blues/eos_curlicue2h.png";
+import { styles } from "./style.HomeTab.css";
 
 export const HomeTab = {
     data() {
