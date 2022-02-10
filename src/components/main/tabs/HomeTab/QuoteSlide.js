@@ -388,7 +388,7 @@ export const QuoteSlide = {
                         Torment in the dark was the danger that I feared, and it did not hold
                         me back. But I would not have come, had I known the danger of light and joy.
                         Now I have taken my worse wound in this parting, even if I were to go this
-                        night straight to the Dark Lord`,
+                        night straight to the Dark Lord.`,
                     author: 'J.R.R. Tolkien' 
                 },
                 { 
@@ -416,7 +416,7 @@ export const QuoteSlide = {
                     text: `
                         What's in a name? That which we call a rose, by any other name
                         would smell as sweet.`,
-                    author: 'Walpola Rahula Thero' 
+                    author: 'William Shakespeare' 
                 },
                 { 
                     text: `
@@ -543,7 +543,7 @@ export const QuoteSlide = {
                     text: `
                         You should forget yourself completely, and lose yourself in what you do. 
                         The moment a speaker becomes self-conscious and thinks 'I am addressing 
-                        an audience', his speech is disturved and his trend of thought broken.`,
+                        an audience', his speech is disturbed and his trend of thought broken.`,
                     author: 'Walpola Rahula Thero' 
                 },
                 { 
@@ -559,6 +559,20 @@ export const QuoteSlide = {
                         let one resolutely pursue the solitary course; there can be no 
                         fellowship with the fool.`,
                     author: 'Walpola Rahula Thero' 
+                },
+                { 
+                    text: `
+                        It is not the critic who counts; not the man who points out how the strong man
+                        stumbles, or where the doer of deeds could have done them better. The credit 
+                        belongs to the man who is actually in the arena, whose face is marred by dust and
+                        sweat and blood; who strives valiantly; who errs, who comes short again and
+                        again, because there is no effort without error and shortcoming; but who does 
+                        actually strive to do the deeds; who knows great enthusiasms, the great 
+                        devotions; who spends himself in a worthy cause; who at the best knows in the end 
+                        the trimph of great achievement, and who at the worst, if he fails, at least fails
+                        while daring greatly, so that his place shall never be with those cold and timid
+                        souls who neither know victory nor defeat.`,
+                    author: 'Theodore Roosevelt' 
                 }
             ]
         };
