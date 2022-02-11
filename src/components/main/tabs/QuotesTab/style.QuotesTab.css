@@ -1,46 +1,86 @@
 #quotes-wrapper {
-    border: 1px solid black;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .quote-block {
-    border: 1px solid black;
     width: 50%;
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-.quote-block button {
-    width: 10em;
-    height: 5em;
+.quotation-mark {
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 32px;
+    right: 40px;
+}
+
+.quote-block .button {
+    height: 40px;
+    width: 35em;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.quote-block .button:active {
+    filter: brightness(40%);
+}
+
+.quote-block .previous-quote {
+    transform: scaleX(-1);
 }
 
 .quote-wrapper {
-    
+    padding: 0em 3em;
 }
 
-.quote-block p {
-    margin: 0 2em;
+.quote-text {
+    font-size: larger;
 }
 
-.previous-quote {
-    
-}
-
-.next-quote {
-    
+.quote-speaker {
+    font-weight: 600;
 }
 
 .quote-categories {
-    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#choose-category {
+    cursor: default;
+    margin: 30px 0;
+    font-size: larger;
+    font-weight: 700;
+    color: #000C66;
 }
 
 .quote-categories ul {
-
+    list-style-type: none;
+    padding: 0;
 }
 
 .quote-categories ul li {
+    border: 1px solid #000C66;
+    border-radius: 15px;
     cursor: pointer;
+    padding: 0.5em 0em;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+    color: #000C66;
+    font-weight: 600;
+    transition: 0.1s all ease-out;
+}
+
+.quote-categories ul li:hover {
+    background-color: #000C66;
+    color: white;
+}
+
+.quote-categories ul li:active {
+    background-color: white;
+    color: #000C66;
 }

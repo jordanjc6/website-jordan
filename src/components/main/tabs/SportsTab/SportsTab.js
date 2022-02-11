@@ -40,7 +40,7 @@ export const SportsTab = {
             v-bind:class="{ imageActive: isImageActive && activeIndex === index }" 
             v-for="(picture, index) in pictures" 
             v-bind:src="picture" 
-            v-bind:style="[isImageActive && activeIndex === index ? { borderImageSource: 'url(' + imageBorder + ')'} : { bordeImageSource: none}]"
+            v-bind:style="[isImageActive && activeIndex === index ? { borderImageSource: 'url(' + imageBorder + ')'} : { borderImageSource: 'none'}]"
             @click="zoomImage(index)" 
         />
         <img />

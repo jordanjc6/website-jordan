@@ -8,6 +8,7 @@
     flex-grow: 1;
     height: 15em;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #sports-wrapper img:hover {
@@ -16,6 +17,7 @@
 
 #sports-wrapper img:last-child {
     flex-grow: 10;
+    cursor: auto;
 }
 
 #sports-wrapper img:last-child:hover {
