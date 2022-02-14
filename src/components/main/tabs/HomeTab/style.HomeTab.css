@@ -14,6 +14,12 @@
     border: 2px solid #000C66;
 }
 
+#greeting {
+    margin-bottom: 1em;
+    font-size: 48px;
+    color: #87cefa;
+}
+
 #biography {
     display: inline-block;
     height: 22em;
@@ -24,12 +30,6 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 525;
     font-size: 18px;
-}
-
-#greeting {
-    margin-bottom: 1em;
-    font-size: 48px;
-    color: #87cefa;
 }
 
 #projects-container {
@@ -45,4 +45,34 @@
     height: 25em;
     width: 100%;
     background-color: #87cefa;
+}
+
+@media (max-width: 428px) {
+    #home-container {
+        flex-direction: column;
+    }
+
+    #display-picture {
+        width: 12em;
+        height: 16em;
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    #greeting {
+        font-size: 30px;
+        margin-bottom: 0.5em;
+    }
+
+    #biography {
+        font-size: 16px;
+        width: 20em;
+        height: 30em;
+        margin: 2em 0;
+        border: 1px solid red;
+    }
+
+    #quotes-container {
+        height: auto;
+    }
 }

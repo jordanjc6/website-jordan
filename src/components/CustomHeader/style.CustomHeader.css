@@ -38,3 +38,9 @@ header {
     background-color: #000C66;
     color: white;
 }
+
+@media (max-width: 428px) {
+    .tabs {
+        display: none;
+    }
+}
