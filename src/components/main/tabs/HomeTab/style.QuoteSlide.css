@@ -44,3 +44,25 @@
     background-color: #000C66;
     color: white;
 }
+
+@media (max-width: 428px) {
+    #quote-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #quote-text {
+        max-width: 14em;
+        font-size: 18px; 
+    }
+
+    #quote-author {
+        max-width: 14em;
+        align-self: center;
+    }
+
+    #quote-block button {
+        width: 50%;
+        margin-bottom: 1.5em;
+    }
+}

@@ -8,6 +8,7 @@ import { styles } from "./style.HomeTab.css";
 export const HomeTab = {
     data() {
         return {
+            windowWidth: null,
             quoteSlideBackground: curlicueLightBlueBackground,
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
@@ -20,14 +21,42 @@ Vue.js, NestJS, Node.js, ASP.Net, SQL Server, and PostgreSQL. I have also taken 
 -oriented programming courses in C++, C#, Java, and Python.
             
 I am interested in software development and exploring the telecommunications industry. 
-You may view my personal projects under the projects tab.`
+You may view my personal projects under the projects tab.`,
+            mobileBiography: `I'm a 2nd year electrical engineering 
+student at the University of Waterloo. 
+For my Spring 2021 coop I was employed 
+as a Front-End UI/UX Developer at Gore 
+Mutual. I am currently employed as a 
+Jr. Software Engineer at MCAP for my 
+Winter 2022 coop.
+            
+I have experience in full stack 
+development using technologies such as 
+ReactJS, Angular, Vue.js, NestJS, 
+Node.js, ASP.Net, SQL Server, and 
+PostgreSQL. I have also taken object
+-oriented programming courses in C++, 
+C#, Java, and Python.
+                        
+I am interested in software development 
+and exploring the telecommunications 
+industry. You may view my personal 
+projects under the projects tab.`
         };
+    },
+    mounted() {
+        this.windowWidth = window.innerWidth;
+        this.$nextTick(() => {
+            window.addEventListener('resize', () => {
+                this.windowWidth = window.innerWidth;
+            });
+        });
     },
     template: `
     <div id="home-container">
         <img id="display-picture" v-bind:src="displayPicture" />
         <div id="biography">
-            <div id="greeting">{{ greeting }}</div>{{ biography }}
+            <div id="greeting">{{ greeting }}</div>{{ windowWidth > 428 ? biography : mobileBiography }}
         </div>
     </div>
     <div id="projects-container">
