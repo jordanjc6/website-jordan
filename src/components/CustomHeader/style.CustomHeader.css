@@ -19,6 +19,14 @@ header {
     transform: translate3d(0, -100%, 0);
 }
 
+.menu-button {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
 .tab {
     background-color: #000C66;
     color: white;
@@ -40,7 +48,76 @@ header {
 }
 
 @media (max-width: 428px) {
+    .menu-button {
+        display: none;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .menu-icon .navicon:before, 
+    .menu-icon .navicon:after {
+        background: #333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .menu-icon .navicon:before {
+        top: 5px;
+    }
+
+    .menu-icon .navicon:after {
+        top: -5px;
+    }
+      
+    .menu-button:checked ~ .tabs {
+        display: initial;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+    }
+      
+    .menu-button:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+      
+    .menu-button:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+      
+    .menu-button:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+      
+    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-button:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
     .tabs {
         display: none;
+        transition: all 0.2s ease-out;
+    }
+
+    .tab {
+        width: 100%;
     }
 }

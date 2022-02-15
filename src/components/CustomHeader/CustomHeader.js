@@ -37,6 +37,8 @@ export const CustomHeader = {
     template: `
         <header v-bind:class="{ 'hide-header' : !showHeader }">
             <i class="icon" v-bind:style="{ backgroundImage: 'url(' + icon + ')' }"></i>
+            <input class="menu-button" type="checkbox" id="menu-button" />
+            <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
             <ul class="list-items tabs">
                 <li class="item tab" v-for="tab in tabs" @click="$emit('switchTab', tab)">
                     {{ tab }}
