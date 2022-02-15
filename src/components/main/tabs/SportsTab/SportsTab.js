@@ -30,8 +30,10 @@ export const SportsTab = {
     },
     methods: {
         zoomImage(index) {
-            this.isImageActive = !this.isImageActive;
-            this.activeIndex = index;
+            if(window.innerWidth > 428) {
+                this.isImageActive = !this.isImageActive;
+                this.activeIndex = index;
+            }
         }
     },
     template: `
