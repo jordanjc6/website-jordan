@@ -33,3 +33,25 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
 }
+
+@media (max-width: 428px) {
+    .project-description {
+        width: 90%;
+        position: initial;
+        padding-top: 25px;
+        margin: 0 5%;
+        font-size: 16px;
+    }
+
+    .project-title {
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+
+    .project-pictures {
+        width: 90%;
+        margin: 0 5%;
+        bottom: 0;
+        top: 25px;
+    }
+}
