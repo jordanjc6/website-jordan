@@ -691,7 +691,7 @@ export const QuotesTab = {
                 },
                 { 
                     text: `
-                        As he does not construct or does not will continuity and becoming or annhilaiton,
+                        As he does not construct or does not will continuity and becoming or annihilation,
                         he does not cling to anything in the world; as he does not cling, he is not anxious; 
                         as he is not anxious, he is completely calmed within.`,
                     speaker: 'Walpola Rahula Thero',
