@@ -18,14 +18,14 @@
     right: 40px;
 }
 
-.quote-block .button {
+.quote-block .quote-button {
     height: 40px;
     width: 35em;
     cursor: pointer;
     background-repeat: no-repeat;
 }
 
-.quote-block .button:active {
+.quote-block .quote-button:active {
     filter: brightness(40%);
 }
 
@@ -97,7 +97,7 @@
         margin: 0 5%;
     }
 
-    .quote-block .button {
+    .quote-block .quote-button {
         width: 40px;
         padding: 20px;
         align-self: baseline;

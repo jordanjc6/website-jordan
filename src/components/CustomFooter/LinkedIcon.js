@@ -11,7 +11,7 @@ export const LinkedIcon = {
         }
     },
     template: `
-        <a v-bind:href="link.address" target='_blank'>
+        <a v-bind:href="link.address" v-bind:id="linkName + '-link'" target='_blank'>
             <img v-bind:src="linkIcon" v-bind:alt="linkName" />
         </a>`
 };

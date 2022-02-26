@@ -829,14 +829,14 @@ export const QuotesTab = {
     <div id="quotes-wrapper" v-bind:style="{ backgroundImage: 'url(' + quoteTabBackground + ')' }">
         <div class="quote-block">
             <div 
-                class="button previous-quote" 
+                class="quote-button previous-quote" 
                 @click="previousQuote" 
                 v-bind:style="{ backgroundImage: 'url(' + nextIcon + ')' }"
                 @mouseover="hoverPrevious = true"
                 v-if="!hoverPrevious"
             ></div>
             <div 
-                class="button previous-quote"
+                class="quote-button previous-quote"
                 @click="previousQuote" 
                 v-bind:style="{ backgroundImage: 'url(' + nextIconColorInvert + ')' }"
                 @mouseleave="hoverPrevious = false"
@@ -848,14 +848,14 @@ export const QuotesTab = {
                 <p class="quote-speaker">{{ currentSpeaker }}</p>
             </div>
             <div 
-                class="button next-quote" 
+                class="quote-button next-quote" 
                 @click="nextQuote" 
                 v-bind:style="{ backgroundImage: 'url(' + nextIcon + ')' }"
                 @mouseover="hoverNext = true"
                 v-if="!hoverNext"
             ></div>
             <div 
-                class="button next-quote" 
+                class="quote-button next-quote" 
                 @click="nextQuote" 
                 v-bind:style="{ backgroundImage: 'url(' + nextIconColorInvert + ')' }"
                 @mouseleave="hoverNext = false"
@@ -865,7 +865,11 @@ export const QuotesTab = {
         <div class="quote-categories">
             <div id="choose-category">Choose a Category!</div>
             <ul>
-                <li v-for="category in categories" @click="pickCategory(category)">{{ category }}</li>
+                <li 
+                    v-for="category in categories" 
+                    v-bind:id="category + '-category'" 
+                    @click="pickCategory(category)"
+                >{{ category }}</li>
             </ul>
         </div>
     </div>`
