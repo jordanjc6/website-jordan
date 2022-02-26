@@ -608,7 +608,7 @@ export const QuoteSlide = {
         <div id="quote-author">
             {{ currentAuthor }}
         </div>
-        <button @click="randomQuote">
+        <button id="random-quote-button" @click="randomQuote">
             New Quote
         </button>
     </div>`

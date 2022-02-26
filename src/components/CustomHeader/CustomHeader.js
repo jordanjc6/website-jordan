@@ -40,7 +40,7 @@ export const CustomHeader = {
             <input class="menu-button" type="checkbox" id="menu-button" />
             <label class="menu-icon" for="menu-button"><span class="navicon"></span></label>
             <ul class="list-items tabs">
-                <li class="item tab" v-for="tab in tabs" @click="$emit('switchTab', tab)">
+                <li class="item tab" v-for="tab in tabs" v-bind:id="tab + '-tab'" @click="$emit('switchTab', tab)">
                     {{ tab }}
                 </li>
             </ul>
