@@ -12,6 +12,7 @@
     margin: 3em;
     border-radius: 1em;
     border: 2px solid #000C66;
+    object-fit: cover;
 }
 
 #greeting {
