@@ -1,3 +1,4 @@
+import analyticsdashboardSlide from "../../../../assets/analyticsdashboard/dashboard_charts.png";
 import mcjewelrySlide from "../../../../assets/mcjewelry/search-parameters.png";
 import weekplannerSlide from "../../../../assets/weekplanner/form.png";
 import connectfourSlide from "../../../../assets/connectfour.png";
@@ -13,6 +14,10 @@ export const ProjectSlide = {
             slideOut: false,
             currentIndex: 0,
             projects: [
+                { 
+                    image: analyticsdashboardSlide,
+                    caption: 'Web Analytics Dashboard'
+                },
                 { 
                     image: mcjewelrySlide,
                     caption: 'MCJewelry Pricing Tool'

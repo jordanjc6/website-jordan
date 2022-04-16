@@ -13,12 +13,12 @@ export const HomeTab = {
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
             biography: `I'm a 2nd year electrical engineering student at the University of Waterloo. For my
-Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual.
-I am currently employed as a Jr. Software Engineer at MCAP for my Winter 2022 coop.
+Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual and
+for my Winter 2022 coop I worked as a Jr. Software Engineer at MCAP.
 
-I have experience in full stack development using technologies such as ReactJS, Angular,
-Vue.js, NestJS, Node.js, ASP.Net, SQL Server, and PostgreSQL. I have also taken object
--oriented programming courses in C++, C#, Java, and Python.
+I have experience in full stack development using technologies such as Vue, Angular, React, 
+Axios, Express, NestJS, ASP.NET Core, Microsoft SQL Server, and PostgreSQL. I have also taken 
+object-oriented programming courses in C++, C#, Java, and Python.
             
 I am interested in software development and exploring the telecommunications industry. 
 You may view my personal projects under the projects tab.`,
@@ -26,16 +26,15 @@ You may view my personal projects under the projects tab.`,
 student at the University of Waterloo. 
 For my Spring 2021 coop I was employed 
 as a Front-End UI/UX Developer at Gore 
-Mutual. I am currently employed as a 
-Jr. Software Engineer at MCAP for my 
-Winter 2022 coop.
+Mutual. For my Winter 2022 coop I worked
+as a Jr. Software Engineer at MCAP.
             
 I have experience in full stack 
 development using technologies such as 
-ReactJS, Angular, Vue.js, NestJS, 
-Node.js, ASP.Net, SQL Server, and 
-PostgreSQL. I have also taken object
--oriented programming courses in C++, 
+Vue, Angular, React, Axios, Express, 
+NestJS, ASP.NET Core, Microsoft SQL 
+Server, and PostgreSQL. I have also taken 
+object-oriented programming courses in C++, 
 C#, Java, and Python.
                         
 I am interested in software development 
