@@ -1,4 +1,8 @@
 import { ProjectDisplay } from "./ProjectDisplay.js";
+import webanalyticsdashboardCharts from '../../../../assets/analyticsdashboard/dashboard_charts.png';
+import webanalyticsdashboardCharts2 from '../../../../assets/analyticsdashboard/dashboard_ss.png';
+import webanalyticsdashboardTable from '../../../../assets/analyticsdashboard/dashboard_table.png';
+import webanalyticsdashboardCustom from '../../../../assets/analyticsdashboard/dashboard_custom.png';
 import leaQuotesAppForm from '../../../../assets/leaquotesapp/form.png';
 import leaQuotesAppHome from '../../../../assets/leaquotesapp/home.png';
 import leaQuotesAppSidenav from '../../../../assets/leaquotesapp/sidenav.png';
@@ -15,6 +19,26 @@ export const ProjectsTab = {
     data() {
         return {
             projects: [
+                { 
+                    title: 'Web Analytics Dashboard',
+                    ref: 'webanalyticsdashboard',
+                    description: `
+                        Web Analytics Dashboard is a custom Vue solution created to
+                        help MCAP visualize what is stored in its analytics database
+                        and understand the actions that clients take on the company's
+                        homeowner, investor, lender, and broker portal sites. On the
+                        first page, users may select the desired daterange to display
+                        preset metrics. On the second page, users may input site, 
+                        logtype, and daterange parameters to generate a chart. This
+                        front-end receives the data through several endpoints created
+                        across 2 apis developed with ASP.NET Core.`,
+                    pictures: [
+                        webanalyticsdashboardCharts,
+                        webanalyticsdashboardCharts2,
+                        webanalyticsdashboardTable,
+                        webanalyticsdashboardCustom
+                    ]
+                },
                 { 
                     title: 'Lea Quotes App',
                     ref: 'leaquotesapp',
