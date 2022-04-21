@@ -12,7 +12,7 @@ export const HomeTab = {
             quoteSlideBackground: curlicueLightBlueBackground,
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
-            biography: `I'm a 2nd year electrical engineering student at the University of Waterloo. For my
+            biography: `I'm a 2nd year computer engineering student at the University of Waterloo. For my
 Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual and
 for my Winter 2022 coop I worked as a Jr. Software Engineer at MCAP.
 
@@ -22,7 +22,7 @@ object-oriented programming courses in C++, C#, Java, and Python.
             
 I am interested in software development and exploring the telecommunications industry. 
 You may view my personal projects under the projects tab.`,
-            mobileBiography: `I'm a 2nd year electrical engineering 
+            mobileBiography: `I'm a 2nd year computer engineering 
 student at the University of Waterloo. 
 For my Spring 2021 coop I was employed 
 as a Front-End UI/UX Developer at Gore 
