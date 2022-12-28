@@ -13,8 +13,8 @@ export const HomeTab = {
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
             biography: `I'm a 3rd year computer engineering student at the University of Waterloo. My work
-experience consists of working as a a Jr. Fullstack Developer @Paralucent, Jr. Software Engineer @MCAP, and 
-a Front-End UI/UX Developer @Gore Mutual.
+experience consists of working as a a Jr. Fullstack Developer @Paralucent, Jr. Software 
+Engineer @MCAP, and a Front-End UI/UX Developer @Gore Mutual.
 
 I have experience in full stack development using technologies such as Angular, Vue, Node, 
 Express, NestJS, ASP.NET Core, Microsoft SQL Server, and PostgreSQL. I have also taken 
