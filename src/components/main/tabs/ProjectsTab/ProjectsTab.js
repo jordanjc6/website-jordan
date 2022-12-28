@@ -44,10 +44,18 @@ export const ProjectsTab = {
                         and external to BMO. At the end of each flow is a results/summary
                         page where you may review the comparisons and print a result pdf.`,
                     pictures: [
-                        webanalyticsdashboardCharts,
-                        webanalyticsdashboardCharts2,
-                        webanalyticsdashboardTable,
-                        webanalyticsdashboardCustom
+                        rfbpWelcome,
+                        rfbpBuild,
+                        rfbpBuild2,
+                        rfbpSearch,
+                        rfbpFilter,
+                        rfbpFilled,
+                        rfbpSummary,
+                        rfbpGenerate,
+                        rfbpFeeComp,
+                        rfbpFeeCompRes,
+                        rfbpFeeCompRes2,
+                        rfbpFeeTable
                     ]
                 },
                 { 
