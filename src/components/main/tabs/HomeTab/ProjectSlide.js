@@ -1,3 +1,4 @@
+import rfbpSlide from "../../../../assets/paralucent-rfbp-snips/welcome-page.png";
 import analyticsdashboardSlide from "../../../../assets/analyticsdashboard/dashboard_charts.png";
 import mcjewelrySlide from "../../../../assets/mcjewelry/search-parameters.png";
 import weekplannerSlide from "../../../../assets/weekplanner/form.png";
@@ -14,6 +15,10 @@ export const ProjectSlide = {
             slideOut: false,
             currentIndex: 0,
             projects: [
+                { 
+                    image: rfbpSlide,
+                    caption: 'Mutual Fund Fee Calculator'
+                },
                 { 
                     image: analyticsdashboardSlide,
                     caption: 'Web Analytics Dashboard'
