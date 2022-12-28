@@ -12,35 +12,33 @@ export const HomeTab = {
             quoteSlideBackground: curlicueLightBlueBackground,
             displayPicture: displayPicture,
             greeting: `Hey, I'm Jordan Castro`,
-            biography: `I'm a 2nd year computer engineering student at the University of Waterloo. For my
-Spring 2021 coop I was employed as a Front-End UI/UX Developer at Gore Mutual and
-for my Winter 2022 coop I worked as a Jr. Software Engineer at MCAP.
+            biography: `I'm a 3rd year computer engineering student at the University of Waterloo. My work
+experience consists of working as a a Jr. Fullstack Developer @Paralucent, Jr. Software 
+Engineer @MCAP, and a Front-End UI/UX Developer @Gore Mutual.
 
-I have experience in full stack development using technologies such as Vue, Angular, React, 
-Axios, Express, NestJS, ASP.NET Core, Microsoft SQL Server, and PostgreSQL. I have also taken 
+I have experience in full stack development using technologies such as Angular, Vue, Node, 
+Express, NestJS, ASP.NET Core, Microsoft SQL Server, and PostgreSQL. I have also taken 
 object-oriented programming courses in C++, C#, Java, and Python.
             
-I am interested in software development and exploring the telecommunications industry. 
-You may view my personal projects under the projects tab.`,
-            mobileBiography: `I'm a 2nd year computer engineering 
-student at the University of Waterloo. 
-For my Spring 2021 coop I was employed 
-as a Front-End UI/UX Developer at Gore 
-Mutual. For my Winter 2022 coop I worked
-as a Jr. Software Engineer at MCAP.
-            
-I have experience in full stack 
-development using technologies such as 
-Vue, Angular, React, Axios, Express, 
-NestJS, ASP.NET Core, Microsoft SQL 
+I am actively building my career in software development, you may view my projects under the 
+projects tab.`,
+            mobileBiography: `I'm a 3rd year computer engineering student 
+at the University of Waterloo. My work
+experience consists of working as a a Jr. 
+Fullstack Developer @Paralucent, Jr. Software 
+Engineer @MCAP, and a Front-End UI/UX Developer 
+@Gore Mutual.
+
+I have experience in full stack development 
+using technologies such as Angular, Vue, Node, 
+Express, NestJS, ASP.NET Core, Microsoft SQL 
 Server, and PostgreSQL. I have also taken 
-object-oriented programming courses in C++, 
-C#, Java, and Python.
-                        
-I am interested in software development 
-and exploring the telecommunications 
-industry. You may view my personal 
-projects under the projects tab.`
+object-oriented programming courses in C++, C#, 
+Java, and Python.
+            
+I am actively building my career in software 
+development, you may view my projects under the 
+projects tab.`
         };
     },
     mounted() {

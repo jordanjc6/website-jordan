@@ -1,4 +1,16 @@
 import { ProjectDisplay } from "./ProjectDisplay.js";
+import rfbpWelcome from '../../../../assets/paralucent-rfbp-snips/welcome-page.png';
+import rfbpBuild from '../../../../assets/paralucent-rfbp-snips/build-portfolio.png';
+import rfbpBuild2 from '../../../../assets/paralucent-rfbp-snips/build-portfolio2.png';
+import rfbpSearch from '../../../../assets/paralucent-rfbp-snips/simple-search.png';
+import rfbpFilter from '../../../../assets/paralucent-rfbp-snips/advanced-search.png';
+import rfbpFilled from '../../../../assets/paralucent-rfbp-snips/filled-portfolio.png';
+import rfbpSummary from '../../../../assets/paralucent-rfbp-snips/portfolio-summary.png';
+import rfbpGenerate from '../../../../assets/paralucent-rfbp-snips/generate-report.png';
+import rfbpFeeComp from '../../../../assets/paralucent-rfbp-snips/fee-comparison.png';
+import rfbpFeeCompRes from '../../../../assets/paralucent-rfbp-snips/fee-comparison-result.png';
+import rfbpFeeCompRes2 from '../../../../assets/paralucent-rfbp-snips/fee-comparison-result2.png';
+import rfbpFeeTable from '../../../../assets/paralucent-rfbp-snips/fee-structure-table.png';
 import webanalyticsdashboardCharts from '../../../../assets/analyticsdashboard/dashboard_charts.png';
 import webanalyticsdashboardCharts2 from '../../../../assets/analyticsdashboard/dashboard_ss.png';
 import webanalyticsdashboardTable from '../../../../assets/analyticsdashboard/dashboard_table.png';
@@ -19,6 +31,33 @@ export const ProjectsTab = {
     data() {
         return {
             projects: [
+                { 
+                    title: 'Mutual Fund Fee Calculator',
+                    ref: 'mutualfundfeecalculator',
+                    description: `
+                        Mutual Fund Fee Calculator is an app that BMO employees will
+                        use to assist with investment portfolio management by
+                        calculating and comparing fees for the inputted portfolio.
+                        There are two different app flows that depends on user input
+                        at the landing page. Both options allow for simple search and
+                        advanced criteria filtering of over 1200 different funds within
+                        and external to BMO. At the end of each flow is a results/summary
+                        page where you may review the comparisons and print a result pdf.`,
+                    pictures: [
+                        rfbpWelcome,
+                        rfbpBuild,
+                        rfbpBuild2,
+                        rfbpSearch,
+                        rfbpFilter,
+                        rfbpFilled,
+                        rfbpSummary,
+                        rfbpGenerate,
+                        rfbpFeeComp,
+                        rfbpFeeCompRes,
+                        rfbpFeeCompRes2,
+                        rfbpFeeTable
+                    ]
+                },
                 { 
                     title: 'Web Analytics Dashboard',
                     ref: 'webanalyticsdashboard',
